@@ -1,0 +1,119 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 400px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+}
+
+.category {
+  font-size: 0.75rem;
+  background-color: #eef2ff;
+  color: #3730a3;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+/* Formula Display Area */
+.formulaDisplay {
+  margin: 1rem 0;
+  background-color: #0b141d;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Description */
+.description {
+  color: #444;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer: Date + Actions */
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.date {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+/* Action Buttons */
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.viewBtn,
+.editBtn,
+.deleteBtn {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.viewBtn {
+  background-color: #e0e7ff;
+  color: #1d4ed8;
+}
+
+.viewBtn:hover {
+  background-color: #c7d2fe;
+}
+
+.editBtn {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.editBtn:hover {
+  background-color: #a7f3d0;
+}
+
+.deleteBtn {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.deleteBtn:hover {
+  background-color: #fecaca;
+}
